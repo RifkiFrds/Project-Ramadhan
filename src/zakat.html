@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Zakat</title>
+    <link rel="stylesheet" href="styles/zakat.css">
+</head>
+<body>
+    <header>
+        <div class="moon"></div>
+        <nav class="container">
+            <a href="#" class="logo">
+                <span>🕌</span> Ramadhan 1446 H
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jadwal.html">Jadwal Sholat</a></li>
+                <li><a href="zakat.html" class="active">Kalkulator Zakat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="zakat container">
+            <div class="zakat-content">
+                <div class="zakat-text">
+                    <p class="deskripsi">Bayar Zakat Untuk Amal Kebaikan!</p>
+                    <h1>Mari Hitung Zakat Anda Selama Setahun!</h1>
+                    <p class="quote">"Beritahukan kepadaku tentang amal perbuatan yang dapat memasukkan aku ke dalam surga. Lalu beliau bersabda, 'Sembahyanglah Allah dan janganlah kamu menyekutukan-Nya dengan sesuatu apapun, dirikanlah sholat, tunaikanlah zakat, dan sambunglah silaturahim.'" (HR Bukhari dan Muslim).</p>
+                    <button class="cta-button" id="scrollToCalculator">
+                        Hitung Kalkulator Zakat 
+                    </button>
+                </div>
+                <img src="images/zakat.png" alt="Zakat" class="hero-image">
+            </div>
+        </section>
+
+        <section class="calculator container" id="calculatorSection">
+            <div class="card">
+                <h3>Kalkulator Zakat Maal</h3>
+                <div class="input-container">
+                    <label for="harta">Total Harta (Rp):</label>
+                    <input type="number" id="harta" placeholder="Masukkan jumlah harta">
+                    <button id="hitungZakatBtn">Hitung Zakat</button>
+                    <p id="hasilZakat" class="result"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Kontribusi</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Tentang</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p>Email: <a href="mailto:muhamadrifkifirdaus22@gmail.com">muhamadrifkifirdaus22@gmail.com</a></p>
+                <p>Alamat: Jl. Abdullah, Kecamatan Benda, Kelurahan Jurumudi, Kota Tangerang, Banten</p>
+                <p>Kode Pos: 15124</p>
+            </div>
+            <div class="footer-section">
+                <h3>Sosial</h3>
+                <div class="sosial-icons">
+                    <a href="https://www.instagram.com/frdskii_/profilecard/?igsh=MXRwN3NuZHR3Ym5zMg%3D%3D'" target="_blank">
+                        <img src="images/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/Rifkibkbf420?mibextid=LQQJ4d&rdid=RUs0eTqie6R3Utmw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19Sr4aeWcs%2F%3Fmibextid%3DLQQJ4d#" target="_blank">
+                        <img src="images/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <img src="images/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhamad-rifki-firdaus-27a925317" target="_blank">
+                        <img src="images/linkedin.svg" alt="linkedin">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            &copy; 2025 <b>Muhamad Rifki Firdaus</b>. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="bundle.js" defer></script>
+    <script>
+         document.getElementById("scrollToCalculator").addEventListener("click", function() {
+    document.getElementById("calculatorSection").scrollIntoView({ behavior: "smooth" });
+});
+    </script> 
+</body>
+</html>
